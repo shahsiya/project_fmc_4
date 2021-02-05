@@ -1,0 +1,33 @@
+@media ( max-width:576px) {
+    .header {
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .button {
+        width: 130px;
+    }
+    .button_main {
+        font-size: 13px;
+    }
+    .promo {
+        &__header {
+            font-size: 32px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+        &__icons {
+            margin-top: 33px;
+            width: 375px;
+        }
+    }
+    .avantages {
+        &__item {
+            max-width: 150px;
+        }
+        &__descr {
+            font-size: 9px;
+        }
+    }
+}
