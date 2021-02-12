@@ -2,24 +2,107 @@
     padding: 81px 0;
     &__inner {
         position: relative;
-        width: 900px;
+        width: 530px;
         margin: 0 auto;
     }
+    .my-dots {
+        position: absolute;
+        bottom: -35px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .my-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 1px;
+        padding: 0;
+        cursor: pointer;
+    }
+    .my-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    .my-dots li button:hover,
+    .my-dots li button:focus {
+        outline: none;
+    }
+    .my-dots li button:hover:before,
+    .my-dots li button:focus:before {
+        opacity: 1;
+    }
+    .my-dots li button:before {
+        font-family: 'slick';
+        font-size: 36px;
+        line-height: 20px;
+        position: absolute;
+        left: -350px;
+        top: -102px;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: 100;
+        color: rgba(100, 100, 100, 0.0);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        /* Обводка маркеров */
+        /* WebKit (Safari/Chrome) Only */
+        -webkit-text-stroke: 1px #fff;
+        /* If we weren't using text-shadow, we'd set a fallback color
+           and use this to set color instead
+          -webkit-text-fill-color: white; */
+        text-shadow: 2px 2 0 #fff, /* Simulated effect for Firefox and Opera
+             and nice enhancement for WebKit */
+        -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        /* / Обводка маркеров */
+    }
+    .my-dots li.slick-active button:before {
+        opacity: .75;
+        color: #fff;
+    }
+    /* .slick-dots {
+        position: absolute;
+        display: flex;
+        border: radius 100%;
+        font-size: 5px;
+        width: 1px;
+        height: 1px;
+        list-style-type: disc;
+        left: -130px;
+        top: 87%;
+         ::marker {
+            display: none;
+        }
+    } */
     .slick-prev,
     .slick-next {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
+        top: 90%;
+        transform: translateY(-100%);
+        left: -210px;
         border: none;
-        background-color: #ffffff;
+        background-color: rgba(100, 100, 100, 0.0);
         img {
-            width: 31px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
         }
     }
     .slick-next {
-        right: -66px;
+        right: 103%;
         left: auto;
     }
 }

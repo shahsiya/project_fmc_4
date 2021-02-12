@@ -1,0 +1,33 @@
+.prengi {
+    min-height: 897px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    &__items {
+        display: inline;
+        img {
+            margin-right: 13px;
+            margin-top: 106px;
+            width: 300px;
+            height: 250px;
+        }
+        #bottom {
+            margin-top: 35px;
+        }
+    }
+    .item {
+        display: block;
+        text-align: center;
+        #prengi {
+            margin-top: 50px;
+            margin-bottom: 29px;
+            width: 300px;
+            height: 100px;
+        }
+        .descr {
+            font-size: 48px;
+            line-height: 30px;
+            color: #393939;
+            font-weight: 700;
+        }
+    }
+}

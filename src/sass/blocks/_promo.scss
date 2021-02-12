@@ -1,55 +1,63 @@
 .promo {
-    min-height: 650px;
-    padding: 21px 0 93px 0;
-    background: url(../img/bg1.jpg) center (center/cover) no-repeat;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 707px;
+    background: url(../img/backgraund.jpg) center (center/cover) no-repeat;
+    &__logo {
+        margin-top: 35px;
+    }
     &__wrapper {
+        padding: 14px 0;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 90px;
-    }
-    &__header {
-        color: #ffffff;
-        font-size: 42px;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 42px;
-    }
-    &__subheader {
-        margin-top: 17px;
-        color: #ffffff;
-        font-size: 24px;
-        line-height: 24px;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
-    &__icons {
-        display: flex;
-        margin-top: 65px;
-        width: 425px;
         justify-content: space-between;
+        align-items: center;
     }
-    &__icon {
-        width: 108px;
-        text-align: center;
+    &__item {
+        width: 50%;
+    }
+    .menu {
+        display: block;
+        top: 60px;
+        position: absolute;
+        left: 560px;
+        justify-content: space-between;
         color: #ffffff;
-        font-size: 14px;
-        font-weight: 500;
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
+        &_item {
+            display: inline;
+        }
+        &_link {
+            display: inline-block;
+            margin-right: 26px;
+            color: #ffffff
         }
     }
-    &__link {
+    &__text {
+        margin-top: -121px;
+        font-size: 35px;
+        line-height: 48px;
         color: #ffffff;
+        font-weight: 900;
+    }
+    &__descr {
+        margin-top: 32px;
+        font-size: 24px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 400;
+    }
+    &__btn {
+        margin-top: 32px;
+        width: 242px;
+        height: 58px;
+        filter: drop-shadow(0 0 3.5px rgba(0, 0, 0, 0.07));
+        background-color: #00c2f0;
         font-size: 16px;
-        font-weight: 500;
-        margin-top: 18px;
-        a {
-            color: #ffffff;
-            text-transform: uppercase;
-            text-decoration: underline;
-        }
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    .carousel {
+        padding: 24px 0;
     }
 }
