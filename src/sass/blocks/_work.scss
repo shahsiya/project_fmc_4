@@ -1,0 +1,21 @@
+.work {
+    min-height: 690px;
+    padding: 79px 82px;
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__text {
+        font-size: 30px;
+        line-height: 36px;
+        color: #393939;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 67px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+}

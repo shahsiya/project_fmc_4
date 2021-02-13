@@ -25,4 +25,16 @@
         height: 40px;
         font-style: 14px;
     }
+    &_btn {
+        margin-top: 32px;
+        width: 242px;
+        height: 58px;
+        filter: drop-shadow(0 0 3.5px rgba(0, 0, 0, 0.07));
+        background-color: $main-color;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 700;
+        border-radius: 5px;
+    }
 }
